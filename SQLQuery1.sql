@@ -34,7 +34,7 @@ GO
 SELECT * FROM Products WHERE LENGTH(BrandName) > 5;
 
 GO
-SELECT * FROM Products WHERE BrandName LIKE '%a%';
+SELECT * FROM Products WHERE BrandName LIKE '%a%' AND LENGTH(BrandName) >= 2;
 
 UPDATE Products
 SET Price=24.3  WHERE Id=3
